@@ -120,7 +120,7 @@ SwitchPorts (Extension Object)
 
 Represents a mapping of abstract 'hardware_id' to a physical switch port.
 
-'hardware_id' is anything that uniquely itentifies a set of physical network interfaces. Note that the *instance* id is used in the device_id field by nova, which doesn't help us when we want to maintain a persistent mapping of devices.
+'hardware_id' is anything that uniquely identifies a set of physical network interfaces. Note that the *instance* id is used in the device_id field by nova, which doesn't help us when we want to maintain a persistent mapping of devices.
 
 #### Create
 ```curl -XPOST localhost:9696/v2.0/portmaps -H 'Content-Type: application/json' -d '{"switchports": [{"switch_id": "<switch_id>", "hardware_id": "device", "port": "Eth1/1", "name": eth0}, {"switch_id": "<switch_id>", "hardware_id": "device", "port": "Eth1/1", "name": eth1}}'```
